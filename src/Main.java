@@ -17,7 +17,7 @@ WINTER,
     SPRING,
     SUMMER,
     FALL,
-    AUTUMN,
+
 
 
   }

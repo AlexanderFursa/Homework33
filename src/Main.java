@@ -21,6 +21,15 @@ WINTER,
 
 
   }
+  public static Season getSeason(String month) {
+    return switch (month.toLowerCase()) {
+      case "dec", "jan", "feb" -> Season.WINTER;
+      case "mar", "apr", "may" -> Season.SPRING;
+      case "jun", "jul", "aug" -> Season.SUMMER;
+      default -> Season.FALL;
+    };
+  }
+
   public static void main(String[] args) {
     System.out.println("Hello world!");
   }
